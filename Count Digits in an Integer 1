@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    long long num;
+    int count=0;
+    scanf("%lld", &num) ;
+    if(num>=1&&num<=100000000) {
+        while(num!=0) {
+            num/=10;
+            count++;
+            }
+        printf ("The count of the given integer is: %d\n", count) ;
+        } else{
+            printf ("Enter a Valid Input\n") ;
+     }
+    return 0;
+}
