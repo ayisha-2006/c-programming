@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        char arr[50];
+        char arr2[50];
+        scanf("%s",arr);
+        scanf("%s",arr2);
+        printf("%s",strcat(arr,arr2));
+        return 0;
+    }
+    
+
