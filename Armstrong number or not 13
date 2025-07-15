@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int num,originalnum,remainder,result=0;
+    scanf("%d",&num);
+    originalnum=num;
+    while(originalnum!=0){
+        remainder=originalnum%10;
+        result+=remainder*remainder*remainder;
+        originalnum/=10;
+        
+    }
+    if(result==num){
+        printf("Yes");
+    }
+    else
+    {
+        printf("No");
+    }
+        
+    return 0;
+}
+
